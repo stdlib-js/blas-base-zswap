@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/blas-base-zswap",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Interchanges two complex double-precision floating-point vectors.",
   "license": "Apache-2.0",
   "author": {
