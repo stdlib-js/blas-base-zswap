@@ -43,38 +43,32 @@ This BLAS level 1 routine interchanges complex double-precision floating-point v
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-zswap
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-zswap = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-zswap@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var zswap = require( 'path/to/vendor/umd/blas-base-zswap/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-zswap@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.zswap;
-})();
-</script>
+var zswap = require( '@stdlib/blas-base-zswap' );
 ```
 
 #### zswap( N, x, strideX, y, strideY )
@@ -84,7 +78,7 @@ Interchange two complex double-precision floating-point vectors.
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
 var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var imag = require( '@stdlib/complex-float64-imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -123,7 +117,7 @@ The `N` and stride parameters determine how values from `x` are interchanged wit
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
 var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var imag = require( '@stdlib/complex-float64-imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -156,7 +150,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
 var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var imag = require( '@stdlib/complex-float64-imag' );
 
 // Initial arrays...
 var x0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -195,7 +189,7 @@ Interchange two complex double-precision floating-point vectors using alternativ
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
 var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var imag = require( '@stdlib/complex-float64-imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -231,7 +225,7 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
 var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var imag = require( '@stdlib/complex-float64-imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -278,16 +272,11 @@ im = imag( z );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-zswap@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var Complex128 = require( '@stdlib/complex-float64-ctor' );
+var zswap = require( '@stdlib/blas-base-zswap' );
 
 function rand() {
     return new Complex128( discreteUniform( 0, 10 ), discreteUniform( -5, 5 ) );
@@ -303,11 +292,6 @@ console.log( y.get( 0 ).toString() );
 zswap( x.length, x, 1, y, -1 );
 console.log( x.get( x.length-1 ).toString() );
 console.log( y.get( y.length-1 ).toString() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -400,7 +384,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/umd
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
 </section>
 
