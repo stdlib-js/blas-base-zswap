@@ -73,7 +73,7 @@ var zswap = require( '@stdlib/blas-base-zswap' );
 
 #### zswap( N, x, strideX, y, strideY )
 
-Interchange two complex double-precision floating-point vectors.
+Interchanges two complex double-precision floating-point vectors.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
@@ -184,7 +184,7 @@ im = imag( z );
 
 #### zswap.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
 
-Interchange two complex double-precision floating-point vectors using alternative indexing semantics.
+Interchanges two complex double-precision floating-point vectors using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
