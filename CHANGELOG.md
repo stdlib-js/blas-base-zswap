@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-01)
+## Unreleased (2024-12-23)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
 -   [`ada1567`](https://github.com/stdlib-js/stdlib/commit/ada15676ce0be30b050d3c0fbcbf777492bb3cac) - **feat:** add C `ndarray` implementation for `blas/base/zswap` [(#3080)](https://github.com/stdlib-js/stdlib/pull/3080) _(by Aman Bhansali, Athan Reines)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 -   [`ed44fee`](https://github.com/stdlib-js/stdlib/commit/ed44feecb9eaa5e0849d1a533e5415624d0aa338) - **style:** use imperative in package.json description and end with period _(by Philipp Burckhardt)_
@@ -126,7 +127,7 @@ This release closes the following issue:
 <details>
 
 -   [`0244027`](https://github.com/stdlib-js/stdlib/commit/0244027e1e2c0ceb1cd8ae1808196c24fa77b142) - **chore:** add missing trailing newlines _(by Philipp Burckhardt)_
--   [`7155e52`](https://github.com/stdlib-js/stdlib/commit/7155e52806a52b6918d0de96ea2fe5da2c19bcd0) - **feat:** add `blas/base/zswap` [(#2075)](https://github.com/stdlib-js/stdlib/pull/2075) _(by Rutam, Athan Reines, stdlib-bot)_
+-   [`7155e52`](https://github.com/stdlib-js/stdlib/commit/7155e52806a52b6918d0de96ea2fe5da2c19bcd0) - **feat:** add `blas/base/zswap` [(#2075)](https://github.com/stdlib-js/stdlib/pull/2075) _(by Rutam Kathale, Athan Reines, stdlib-bot)_
 
 </details>
 
@@ -142,7 +143,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 -   Athan Reines
 -   Philipp Burckhardt
--   Rutam
+-   Rutam Kathale
 
 </section>
 
