@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-23)
+## Unreleased (2025-02-16)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`8449e0b`](https://github.com/stdlib-js/stdlib/commit/8449e0b1753e42118df3097fc8793cfd2571646e) - **docs:** update examples for `blas/base/zswap` [(#5218)](https://github.com/stdlib-js/stdlib/pull/5218) _(by Gururaj Gurram)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
 -   [`ada1567`](https://github.com/stdlib-js/stdlib/commit/ada15676ce0be30b050d3c0fbcbf777492bb3cac) - **feat:** add C `ndarray` implementation for `blas/base/zswap` [(#3080)](https://github.com/stdlib-js/stdlib/pull/3080) _(by Aman Bhansali, Athan Reines)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
@@ -38,10 +39,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
+-   Gururaj Gurram
 -   Philipp Burckhardt
 
 </section>
