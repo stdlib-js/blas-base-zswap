@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-16)
+## Unreleased (2025-03-14)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`022fa01`](https://github.com/stdlib-js/stdlib/commit/022fa012a2b817e4a4cdaf78dfb902c549683366) - **docs:** fix example _(by Athan Reines)_
 -   [`8449e0b`](https://github.com/stdlib-js/stdlib/commit/8449e0b1753e42118df3097fc8793cfd2571646e) - **docs:** update examples for `blas/base/zswap` [(#5218)](https://github.com/stdlib-js/stdlib/pull/5218) _(by Gururaj Gurram)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
 -   [`ada1567`](https://github.com/stdlib-js/stdlib/commit/ada15676ce0be30b050d3c0fbcbf777492bb3cac) - **feat:** add C `ndarray` implementation for `blas/base/zswap` [(#3080)](https://github.com/stdlib-js/stdlib/pull/3080) _(by Aman Bhansali, Athan Reines)_
