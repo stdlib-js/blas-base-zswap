@@ -50,7 +50,7 @@ This BLAS level 1 routine interchanges complex double-precision floating-point v
 ## Usage
 
 ```javascript
-import zswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-zswap@esm/index.mjs';
+import zswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-zswap@v0.2.0-esm/index.mjs';
 ```
 
 #### zswap( N, x, strideX, y, strideY )
@@ -173,7 +173,7 @@ zswap.ndarray( 2, x, 2, 1, y, -1, y.length-1 );
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@esm/index.mjs';
-import zswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-zswap@esm/index.mjs';
+import zswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-zswap@v0.2.0-esm/index.mjs';
 
 function rand() {
     return new Complex128( discreteUniform( 0, 10 ), discreteUniform( -5, 5 ) );
