@@ -378,7 +378,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -391,8 +391,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-zswap.svg
 [npm-url]: https://npmjs.org/package/@stdlib/blas-base-zswap
 
-[test-image]: https://github.com/stdlib-js/blas-base-zswap/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-base-zswap/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/blas-base-zswap/actions/workflows/test.yml/badge.svg?branch=v0.2.0
+[test-url]: https://github.com/stdlib-js/blas-base-zswap/actions/workflows/test.yml?query=branch:v0.2.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-zswap/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-base-zswap?branch=main
@@ -404,8 +404,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -426,7 +426,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [blas]: http://www.netlib.org/blas
 
-[zswap]: https://netlib.org/lapack/explore-html-3.6.1/d2/df9/group__complex16__blas__level1_ga13a187010a0cae1fef2820072404e857.html#ga13a187010a0cae1fef2820072404e857
+[zswap]: https://netlib.org/lapack/explore-html/d7/d51/group__swap_ga8e324819e4cd92b6fde3ae40c83a5cb3.html
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
