@@ -33,11 +33,11 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Interchange two complex double-precision floating-point vectors.
+> Interchange two double-precision complex floating-point vectors.
 
 <section class="intro">
 
-This BLAS level 1 routine interchanges complex double-precision floating-point vectors `x` and `y`. The operation is performed in-place, with `x` being overwritten with the values from `y`, and `y` being overwritten with the values from `x`.
+This BLAS level 1 routine interchanges double-precision complex floating-point vectors `x` and `y`. The operation is performed in-place, with `x` being overwritten with the values from `y`, and `y` being overwritten with the values from `x`.
 
 </section>
 
@@ -73,7 +73,7 @@ var zswap = require( '@stdlib/blas-base-zswap' );
 
 #### zswap( N, x, strideX, y, strideY )
 
-Interchanges two complex double-precision floating-point vectors.
+Interchanges two double-precision complex floating-point vectors.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
@@ -130,7 +130,7 @@ zswap( 2, x1, -2, y1, 1 );
 
 #### zswap.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
 
-Interchanges two complex double-precision floating-point vectors using alternative indexing semantics.
+Interchanges two double-precision complex floating-point vectors using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array-complex128' );
@@ -236,7 +236,7 @@ console.log( y.get( y.length-1 ).toString() );
 
 #### c_zswap( N, \*X, strideX, \*Y, strideY )
 
-Interchanges two complex double-precision floating-point vectors.
+Interchanges two double-precision complex floating-point vectors.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 }; // interleaved real and imaginary components
@@ -259,7 +259,7 @@ void c_zswap( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, cons
 
 #### c_zswap_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
 
-Interchanges two complex double-precision floating-point vectors using alternative indexing semantics.
+Interchanges two double-precision complex floating-point vectors using alternative indexing semantics.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 }; // interleaved real and imaginary components
